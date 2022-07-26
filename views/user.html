@@ -1,0 +1,10 @@
+{{ template "header" }}
+
+<main class="container">
+  {{ range .Data }}
+  <h1>Name : {{ .Name }}</h1>
+  <h3>Email : {{ .Email }}</h3>
+  {{ end }}
+</main>
+
+{{ template "footer" }}
